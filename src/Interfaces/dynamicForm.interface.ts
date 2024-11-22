@@ -1,6 +1,6 @@
 export interface Field {
     id: string;
-    type: InputType;
+    type: InputType | string;
     label: string;
     required?: boolean;
     placeholder?: string;
@@ -50,14 +50,15 @@ export interface Field {
 
   // interface for testing 
   export const formSchema: FormSchema = {
-    formTitle: 'Contact Form',
-    formDescription: 'Please fill in the details below.',
+    formTitle: "Contact Form",
+    formDescription: "Please fill in the details below.",
     fields: [
-      { id: 'name', label: 'Name', required: true, type: InputType.Text },
-      { id: 'email', label: 'Email', required: true, type: InputType.Email },
-      { id: 'message', label: 'Message', required: false, type: InputType.Textarea }
-    ]
+      { id: "name", label: "Name", required: true, type: InputType.Text, placeholder: "Enter your name" },
+      { id: "email", label: "Email", required: true, type: InputType.Email, placeholder: "Enter your email" },
+      { id: "message", label: "Message", required: false, type: InputType.Textarea, placeholder: "Enter your message" },
+    ],
   };
+  
   
   
   

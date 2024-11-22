@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DynamicForm from './Components/dynamicForm'
 import JSONEditor from './Components/jsonEditor'
 import Navbar from './Components/navbar'

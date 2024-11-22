@@ -8,7 +8,7 @@ interface DynamicFormProps {
     schema: FormSchema; 
 }
 
-type FormData = Record<string, any>;
+type FormData = Record<string, string | number | boolean | string[]>;
 
 const FieldWrapper: React.FC<{
     field: Field;
